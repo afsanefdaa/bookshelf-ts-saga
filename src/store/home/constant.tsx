@@ -1,2 +1,4 @@
 export const INCREASE_COUNT = "INCREASE_COUNT";
 export const DECREASE_COUNT = "DECREASE_COUNT";
+export const BOOKS_SUCCESS = "BOOKS_SUCCESS";
+export const BOOKS_REQUEST = "BOOKS_REQUEST";
