@@ -4,7 +4,7 @@ import { takeLatest, take, all, put } from 'redux-saga/effects';
 
 
 function* fetchBooks() {
-    const json = yield fetch('http://openlibrary.org/search.json?q=the+lord+of+the+rings&page=2&limit=3')
+    const json = yield fetch('http://openlibrary.org/search.json?q=the+lord+of+the+rings&page=2&limit=10')
         .then(response => response.json());
     yield put({ type: BOOKS_SUCCESS, payload: json });
 }
